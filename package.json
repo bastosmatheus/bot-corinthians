@@ -1,0 +1,23 @@
+{
+  "name": "botrinthians",
+  "author": "maTheus",
+  "version": "1.0.0",
+  "description": "um bot para fornecer informações do Sport Club Corinthians Paulista.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ./src/main.ts",
+    "build": "tsup ./src/main.ts --format esm"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "puppeteer": "^22.11.0",
+    "puppeteer-core": "^22.11.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.8",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.4",
+    "typescript": "^5.4.5"
+  }
+}
