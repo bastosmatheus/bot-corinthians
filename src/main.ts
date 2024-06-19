@@ -34,7 +34,7 @@ class Bot {
       )
     );
 
-    const optionSelected = readlineSync.keyIn("Digite uma opção (0 a 5): ", {
+    const optionSelected = readlineSync.keyIn("Digite uma opcao (0 a 5): ", {
       limit: "$<0-5>",
       encoding: "utf-8",
     });
