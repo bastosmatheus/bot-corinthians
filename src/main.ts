@@ -73,7 +73,7 @@ class Bot {
         break;
       default:
         await this.browser.close();
-        break;
+        return;
     }
 
     await this.page.goto("https://www.corinthians.com.br/");
@@ -129,7 +129,7 @@ class Bot {
 
     console.log(players);
 
-    readlineSync.keyIn("\nDigite qualquer tecla para continuar: ");
+    readlineSync.keyIn("\nDigite qualquer tecla para voltar ao menu: ");
   }
 
   private async mensMatches() {
@@ -163,7 +163,7 @@ class Bot {
 
     console.log(games);
 
-    readlineSync.keyIn("\nDigite qualquer tecla para continuar: ");
+    readlineSync.keyIn("\nDigite qualquer tecla para voltar ao menu: ");
   }
 
   private async womensMatches() {
@@ -214,7 +214,7 @@ class Bot {
 
     console.log(games);
 
-    readlineSync.keyIn("\nDigite qualquer tecla para continuar: ");
+    readlineSync.keyIn("\nDigite qualquer tecla para voltar ao menu: ");
   }
 
   private async news() {
@@ -257,7 +257,7 @@ class Bot {
 
     console.log(newsList);
 
-    readlineSync.keyIn("\nDigite qualquer tecla para continuar: ");
+    readlineSync.keyIn("\nDigite qualquer tecla para voltar ao menu: ");
   }
 }
 
